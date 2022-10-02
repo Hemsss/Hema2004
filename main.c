@@ -3,15 +3,19 @@
 
 int main()
 {
-    int a;
- long b;
- long long c;
- double e;
- long double f;
- printf("Size of int = %zu bytes \n", sizeof(a));
- printf("Size of long int = %zu bytes\n", sizeof(b));
- printf("Size of long long int = %zu bytes\n", sizeof(c));
- printf("Size of double = %zu bytes\n", sizeof(e));
- printf("Size of long double = %zu bytes\n", sizeof(f));
-    return 0;
+
+double first, second, temp;
+ printf("Enter first number: ");
+ scanf("%lf", &first);
+ printf("Enter second number: ");
+ scanf("%lf", &second);
+
+ temp = first;
+
+ first = second;
+ second = temp;
+
+ printf("\nAfter swapping, first number = %.2lf\n", first);
+ printf("After swapping, second number = %.2lf", second);
+ return 0;
 }
