@@ -1,15 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
-
-int number;
- printf( "Please enter a number: " );
- scanf( "%d", &number);
- printf( "You entered %d", number );
+int main()
+{int testInteger = 5;
+ printf("Number = %d", testInteger);
  return 0;
 
-
 }
-
-
