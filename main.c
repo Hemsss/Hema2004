@@ -3,19 +3,14 @@
 
 int main()
 {
-    double a, b;
- printf("Enter a: ");
- scanf("%lf", &a);
- printf("Enter b: ");
- scanf("%lf", &b);
+   int num, count, sum = 0;
+ printf("Enter a positive integer: ");
+ scanf("%d", &num);
 
- a = a - b;
-
- b = a + b;
-
- a = b - a;
-
- printf("After swapping, a = %.2lf\n", a);
- printf("After swapping, b = %.2lf", b);
+ for(count = 1; count <= num; ++count)
+ {
+ sum += count;
+ }
+ printf("Sum = %d", sum);
  return 0;
 }
