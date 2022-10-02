@@ -2,8 +2,14 @@
 #include <stdlib.h>
 
 int main()
-{int testInteger = 5;
- printf("Number = %d", testInteger);
+{float num1;
+ double num2;
+ printf("Enter a number: ");
+ scanf("%f", &num1);
+ printf("Enter another number: ");
+ scanf("%lf", &num2);
+ printf("num1 = %f\n", num1);
+ printf("num2 = %lf", num2);
  return 0;
 
 }
