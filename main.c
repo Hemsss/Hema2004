@@ -3,19 +3,19 @@
 
 int main()
 {
+    double a, b;
+ printf("Enter a: ");
+ scanf("%lf", &a);
+ printf("Enter b: ");
+ scanf("%lf", &b);
 
-double first, second, temp;
- printf("Enter first number: ");
- scanf("%lf", &first);
- printf("Enter second number: ");
- scanf("%lf", &second);
+ a = a - b;
 
- temp = first;
+ b = a + b;
 
- first = second;
- second = temp;
+ a = b - a;
 
- printf("\nAfter swapping, first number = %.2lf\n", first);
- printf("After swapping, second number = %.2lf", second);
+ printf("After swapping, a = %.2lf\n", a);
+ printf("After swapping, b = %.2lf", b);
  return 0;
 }
