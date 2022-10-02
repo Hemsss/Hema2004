@@ -2,17 +2,16 @@
 #include <stdlib.h>
 
 int main()
-{int dividend, divisor, quotient, remainder;
- printf("Enter dividend: ");
- scanf("%d", &dividend);
- printf("Enter divisor: ");
- scanf("%d", &divisor);
-
- quotient = dividend / divisor;
-
- remainder = dividend % divisor;
- printf("Quotient = %d\n", quotient);
- printf("Remainder = %d", remainder);
- return 0;
-
+{
+    int a;
+ long b;
+ long long c;
+ double e;
+ long double f;
+ printf("Size of int = %zu bytes \n", sizeof(a));
+ printf("Size of long int = %zu bytes\n", sizeof(b));
+ printf("Size of long long int = %zu bytes\n", sizeof(c));
+ printf("Size of double = %zu bytes\n", sizeof(e));
+ printf("Size of long double = %zu bytes\n", sizeof(f));
+    return 0;
 }
