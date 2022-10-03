@@ -3,15 +3,17 @@
 
 int main()
 {
-
-int n, i, sum = 0;
- printf("Enter a positive integer: ");
+  int t1 = 0, t2 = 1, nextTerm = 0, n;
+ printf("Enter a positive number: ");
  scanf("%d", &n);
- i = 1;
- while (i <= n) {
- sum += i;
- ++i;
+
+ printf("Fibonacci Series: %d, %d, ", t1, t2);
+ nextTerm = t1 + t2;
+ while (nextTerm <= n) {
+ printf("%d, ", nextTerm);
+ t1 = t2;
+ t2 = nextTerm;
+ nextTerm = t1 + t2;
  }
- printf("Sum = %d", sum);
  return 0;
 }
